@@ -1,0 +1,18 @@
+from turtle import Turtle,Screen
+import random
+colors = ['medium purple','green','indigo',"lavender",'medium slate blue']
+tim = Turtle()
+tim.shape("turtle")
+tim.color("medium purple")
+# tim.color(random.choice(colors))
+directions = [0, 90, 180, 270]
+tim.pensize(15)
+tim.speed("fast")
+
+for _ in range(200):
+    tim.forward(30)
+    tim.setheading(random.choice(directions))
+    tim.color(random.choice(colors))
+
+screen=Screen()
+screen.exitonclick()
